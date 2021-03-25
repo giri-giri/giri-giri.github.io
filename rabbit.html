@@ -43,6 +43,16 @@
   gtag('config', 'G-58Y4P6GKDP');
 </script>
 <script>
-  console.log('👋 so you came this far - we like curious people')
+  var devtools = function() {};
+  devtools.toString = function() {
+  if (!this.opened) {
+    alert("Going into console?");
+  }
+  this.opened = true;
+}
+
+  console.log('%c', devtools);
+  console.log('👋 so you came this far - we like curious people - the 🕳 goes deeper');
+</script>
 </body>
 </html>
