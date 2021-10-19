@@ -11,17 +11,46 @@
   <meta property="og:url" content="https://girigiri.dev">
   <meta property="og:image" content="">
   <meta name="theme-color" content="#fafafa">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
   <style>
     *{
       margin: 0; border: 0; padding: 0;
     }
     body{
-      margin: 10rem;
-      text-align: center;
-      font-size: 32px;
+      background-image: url(https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1781&q=80);
+      background-position: top center;
+      background-repeat: no-repeat;
+      text-align: left;
       font-family: monospace;
+      font-Family: 'Source Sans Pro', sans-serif;
+      font-Size: 16px
     }
-    small{
+    .box{
+      position: relative;
+      margin: 10rem auto;
+      max-width: 32rem;
+      background-color: white;
+      padding: 2rem;
+      box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+    }
+    h1{
+      font-Family: 'Playfair Display', serif;
+      font-Size: 48px;
+      line-height: 58px;
+      margin-bottom: 1rem;
+    }
+    p{
+      margin-bottom: 1rem;
+    }
+    .rabbit{
       position: fixed;
       bottom: 1rem;
       right: 1rem;
@@ -30,11 +59,127 @@
     a{
       text-decoration: none;
     }
+/* CSS */
+.button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 44px;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+/* common */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #b9292b;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #db3434;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+.center{
+  text-align: center;
+}
   </style>
 </head>
 <body>
-  <h1>👋 → ギリギリ.🧑‍💻</h1>
-  <small><a href="rabbit.html">🐇</a></small>
+  <div class="box">
+    <div class="ribbon ribbon-top-right"><span>Sold out</span></div>
+    <small>ギリギリ</small>
+    <h1>Creating products people love</h1>
+    <br>
+    <p>A product manager is the person who identifies the customer need and the larger business objectives that a product or feature will fulfill, articulates what success looks like for a product, and rallies a team to turn that vision into a reality. </p>
+    <p>Having a product manager on-site during your product development process will allow you to work more efficiently, while minimizing risks and rework.</p>
+    <br>
+    <p><a class="button" href="mailto:work@girigiri.dev">Contact us for availability</a></p>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="center"><small>GIRIGIRI AS is a Norwegian registered company - NO 926 971 085 MVA.</small></p>
+  <small class="rabbit"><a href="rabbit.html">🐇</a></small>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-58Y4P6GKDP"></script>
 <script>
